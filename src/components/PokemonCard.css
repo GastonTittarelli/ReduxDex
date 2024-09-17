@@ -1,0 +1,124 @@
+.pokemon-card{
+    width: 250px;
+    border: solid 2px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.card-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pokemon-number {
+    background-color: grey;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-weight: bold;
+    
+}
+
+.favorite-button {
+    float: right;
+}
+
+.pokemon-card-link{
+    font-style: normal;
+    text-decoration: none;
+    display: flex!important;
+    justify-content: center!important;
+    height: 175px;
+    position: relative;
+}
+
+.pokemon-image{
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    user-select: none;
+    filter: drop-shadow(3px 3px 0 var(--color));
+    transition: filter 0.3s ease;
+    cursor: pointer;
+}
+
+.pokemon-card-link:hover .pokemon-image{
+    filter: drop-shadow(0 0 20px var(--color));
+}
+
+.ant-card-body{
+    padding: 5px 15px 24px 15px!important;
+}
+.pokemon-name{
+    text-align: center;
+    margin-bottom: 10px!important;
+}
+
+.ant-card-meta-title {
+    font-size: 1.5rem!important;
+}
+
+.pokemon-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    width: 100%!important;
+    margin: 0!important;
+}
+
+.pokemon-stat{
+    margin: 0!important;
+    padding: 0!important;
+    text-align: center;
+    font-size: 15px;
+}
+
+.stat-title {
+    font-weight: normal;
+    color: grey;
+    font-size: 13px;
+    margin: 0!important;
+    padding: 0!important;
+}
+
+.stat-value {
+    font-weight: bold;
+    color: black;
+    margin: 0!important;
+    padding: 0!important;
+}
+
+.pokemon-types {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.type-label {
+    color: grey;
+    font-size: 13px;
+}
+
+.types{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.ant-modal{
+    width: 600px!important;
+    height: 470px!important;
+    padding: 0!important;
+    margin: 0 !important;
+    position: absolute!important;
+    top: 50%!important;
+    left: 50%!important;
+    transform: translate(-50%, -50%)!important;
+}
+
+.ant-modal-content {
+    box-shadow: none!important;
+    width: 100%!important;
+    height: 100%!important;
+    padding: 0!important;
+    margin: 0 !important;
+    background-color: transparent!important;
+}

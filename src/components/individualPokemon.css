@@ -1,0 +1,128 @@
+.individualContainer{
+    width: 600px;
+    height: 470px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pokemonIndividual{
+    height: 400px;
+    width: 600px;
+    display: flex;
+}
+.basicInfo{
+    width: 350px;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+    background-color: var(--color);
+    border-radius: 6px 0 0 6px ;
+    border: solid 2px rgb(104, 104, 104);
+    border-right: 0;
+}
+.pokemonImagen{
+    width: 300px;
+    height: auto;
+    position: absolute;
+    border-radius: 50%;
+    object-position: center; 
+    transform: scale(0.7);
+    user-select:none
+}
+.canvasIcono{
+    border-radius: 50%;
+    border: solid 2px var(--color);
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+.dimension{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: -3px;
+}
+
+.tipo{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.statValue, .type{
+    font-weight: bold;
+}
+
+.contenedorImagen{
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.statsInfo {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 0 6px 6px 0;
+    border: solid 2px rgb(104, 104, 104);
+    border-left: 0;
+    background-color: rgb(253, 253, 253);
+    margin: 0;
+    padding: 0;
+}
+
+.mainTitle{
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 0;
+    padding-top: 7px;
+}
+.stat {
+    width: 80%;
+}
+
+.statTitle1 {
+    font-weight: bold;
+}
+
+.statName1{
+    font-weight: normal;
+}
+.statValue {
+    font-size: 16px;
+}
+
+.progress-bar-container {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 20vw;
+    height: 10px;
+    overflow: hidden;
+    border: solid 1px rgb(189, 189, 189);
+}
+
+.progress-bar {
+    height: 8px;
+    background-color: var(--color);
+    border-radius: 20vw;
+    transition: width 0.3s ease;
+}
+
+.pokeTitle{
+    width: 600px;
+    height: 50px;
+    background-color: var(--color);
+    border-radius: 30vw ;
+    border: solid 2px rgb(104, 104, 104);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}

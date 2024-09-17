@@ -1,0 +1,128 @@
+.header{
+    width: 100%;
+    background-color: rgb(86, 42, 167);
+    height: 200px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+#contenedorCanva{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#dropsCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+}
+
+.imagenes{
+    width: 170px;
+    height: 180px;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    user-select: none;
+}
+
+.logo{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    padding-bottom: 5px;
+    z-index: 100;
+}
+
+.imagenes:hover .logo{
+    opacity: 0;
+    display: none;
+}
+
+.ditto{
+    display: none;
+    opacity: 0;
+    width: 100%;
+}
+
+.imagenes:hover .ditto{ 
+    opacity: 1;
+    display: block;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 50px; 
+    background-color: black;
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+    border-radius: 30vw;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 0; 
+    left: 40%;
+    opacity: 1;
+}
+
+.imagenes:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.buscador{
+    width: 70%;
+}
+
+.ant-input {
+    padding: 10px 11px;
+}
+
+.ant-input-search-button {
+    display: none;
+}
+
+.ant-input-group >.ant-input:first-child{border-radius: 6px;
+}
+
+.favoritos{
+z-index: 10;
+width: 80px;
+object-fit: contain;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 1rem ;
+position: relative;
+}
+
+.pokebola{
+    width: 100px;
+    z-index: 10;
+    user-select: none;
+}
+
+.gengarAppears, .gengarHidden{
+    width: 80px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    transform: rotate(30deg);
+    transition: all 0.5s ease;
+}
+
+.gengarAppears{
+    right: -30px;
+    top: -32px;
+    width: 87px;
+}
