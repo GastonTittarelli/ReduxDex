@@ -35,7 +35,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './public/index.html', // Usa tu archivo HTML como base
+            template: './dist/index.html', // Usa tu archivo HTML como base
         }),
     ],
     devServer: {
