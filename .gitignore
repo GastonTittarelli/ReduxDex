@@ -9,8 +9,6 @@
 # production
 /build
 
-# Build output
-/dist/
 
 # Babel cache
 /.babel-cache
