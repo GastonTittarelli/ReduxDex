@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 // Detectar si estamos en producción o desarrollo
 const isProd = process.env.NODE_ENV === 'production';
@@ -36,6 +37,9 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './dist/index.html', // Usa tu archivo HTML como base
+        }),
+        new CopyWebpackPlugin({
+            patterns: [{ from: 'src/404.html', to: '404.html' }],
         }),
     ],
     devServer: {
