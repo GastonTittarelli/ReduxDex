@@ -36,10 +36,15 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './public/index.html', // Usa tu archivo HTML como base
+            template: './index.html', // Usa tu archivo HTML como base
         }),
         new CopyWebpackPlugin({
-            patterns: [{ from: 'src/404.html', to: '404.html' }],
+            patterns: [
+                { from: '.nojekyll', to: '' },
+                { from: 'src/404.html', to: '404.html' },
+                // { from: 'src/assets', to: 'assets' },
+            ],
+            
         }),
     ],
     devServer: {
