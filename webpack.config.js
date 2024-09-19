@@ -36,7 +36,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './dist/index.html', // Usa tu archivo HTML como base
+            template: './public/index.html', // Usa tu archivo HTML como base
         }),
         new CopyWebpackPlugin({
             patterns: [{ from: 'src/404.html', to: '404.html' }],
