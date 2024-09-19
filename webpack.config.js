@@ -12,7 +12,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js', // Nombre del archivo de salida
         // Cambiar el publicPath dinámicamente
-        publicPath: isProd ? '/Pokedex-Redux/' : '/', // Para GitHub Pages o local
+        publicPath: '', // Para GitHub Pages o local
     },
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],  // Soporte para TypeScript y JSX
@@ -36,7 +36,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './index.html', // Usa tu archivo HTML como base
+            template: './public/index.html', // Usa tu archivo HTML como base
         }),
         new CopyWebpackPlugin({
             patterns: [

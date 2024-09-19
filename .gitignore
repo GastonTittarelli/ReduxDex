@@ -10,10 +10,6 @@
 /build
 
 
-# Babel cache
-/.babel-cache
-/.cache
-
 # misc
 .DS_Store
 .env.local
