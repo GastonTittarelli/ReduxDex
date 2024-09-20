@@ -18,14 +18,18 @@ const pokemons = useSelector((state) => state.data.pokemons);
 // Verifica si hay Pokémon favorito
 const hasFavorites = pokemons.some(pokemon => pokemon.favorite);
 
+// Carga las imagenes para el entorno de produccion webpack
+const pokebola = require('../../public/pokebola.png');
+const pokebola2 = require('../../public/pokebola2.png');
+
     return ( 
         <div className='header'>
             <div id='contenedorCanva'>
 
                 <CanvasAnimationShine/>
                 <div className='imagenes'>
-                    <img src="../Logo2.png" alt="Logo pokedex" className="logo"/>
-                    <img src="../ditto.gif" alt="?" className="ditto" title='Dito has appeared!'/>
+                    <img src={require("../../public/Logo2.png")} alt="Logo pokedex" className="logo"/>
+                    <img src={require("../../public/ditto.gif")} alt="?" className="ditto" title='Dito has appeared!'/>
                     <span className="tooltiptext">???</span>
                 </div>
                 <Input.Search
@@ -38,12 +42,12 @@ const hasFavorites = pokemons.some(pokemon => pokemon.favorite);
 
                 <Link to="/favoritos" className='favoritos'>
                     <img 
-                        src={hasFavorites ? "../pokebola2.png" : "../pokebola.png" }
+                        src={hasFavorites ? pokebola2 : pokebola}
                         alt="pokebola" 
                         className="pokebola"
                         title='Favoritos'
                     />
-                    <img src="../favGengar3.png" alt="gengarImg" className={hasFavorites ?'gengarAppears' : 'gengarHidden' }/>
+                    <img src={require("../../public/favGengar3.png")} alt="gengarImg" className={hasFavorites ?'gengarAppears' : 'gengarHidden' }/>
                 </Link>
             </div>
             

@@ -47,7 +47,7 @@ const PokemonList = ({ pokemons, searchTerm }) => {
                     <div className='contenedorPokeButtons'>
                         <img 
                         className={currentPage === index + 1 ? 'pokeButtonImgAct' : 'pokeButtonImg'} 
-                        src={currentPage === index + 1 ? "./pokeButtonAct.png" : "./pokeButton.png"} 
+                        src={currentPage === index + 1 ? require("../../public/pokeButtonAct.png") : require("../../public/pokeButton.png")} 
                         alt="Button Poke" />
                         <button 
                             key={index + 1} 

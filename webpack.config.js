@@ -31,6 +31,9 @@ module.exports = {
             {
                 test: /\.(png|jpg|gif|svg)$/,  // Para imágenes
                 type: 'asset/resource',
+                generator: {
+                    filename: 'assets/images/[name][ext]', // Opcional: Ruta para almacenar las imágenes
+                },
             },
         ],
     },
@@ -43,7 +46,7 @@ module.exports = {
             patterns: [
                 { from: '.nojekyll', to: '' },
                 { from: 'src/404.html', to: '404.html' },
-                // { from: 'src/assets', to: 'assets' },
+                { from: 'public', to: 'assets/images' },
             ],
             
         }),

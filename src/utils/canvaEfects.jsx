@@ -15,7 +15,7 @@ export const CanvasAnimationShine = () => {
 
     // Cargar la imagen
     const image = new Image();
-    image.src = '../../../brillo2.png';
+    image.src = require('../../public/brillo2.png');
 
     // Array para las imágenes
     const images = [];
