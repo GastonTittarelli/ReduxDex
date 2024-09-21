@@ -111,7 +111,7 @@
 
 .progress-bar {
     height: 8px;
-    background-color: var(--color);
+    background-color: color-mix(in display-p3, var(--color) 85%, #1a1a1a 15%);
     border-radius: 20vw;
     transition: width 0.3s ease;
 }

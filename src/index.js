@@ -7,7 +7,7 @@ import { applyMiddleware, compose, legacy_createStore as createStore } from 'red
 import { logger } from './middlewares';
 import { thunk } from 'redux-thunk';
 import rootReducer from './reducers/rootReducers';
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -18,9 +18,9 @@ const composedEnhancers = composeAlt(applyMiddleware(thunk, logger))
 const store = createStore(rootReducer, composedEnhancers) 
 
 root.render(
-  <BrowserRouter>
+  <HashRouter>
     <Provider store={store}>
       <App />
     </Provider>
-  </BrowserRouter>
+  </HashRouter>
 );

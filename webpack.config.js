@@ -6,40 +6,41 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = {
-    entry: './src/index.js',  // Tu archivo de entrada principal
+    entry: './src/index.js',  // Archivo de entrada
 
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js', // Nombre del archivo de salida
-        // Cambiar el publicPath dinámicamente
-        publicPath: isProd ? '/Pokedex-Redux/' : '/', // Para GitHub Pages o local
+        filename: 'bundle.js', 
+
+        // publicPath: isProd ? '/Pokedex-Redux/' : '/', // Local
+        publicPath: isProd ? '/Pokedex-Redux/' : './', // Github Pages
     },
     resolve: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],  // Soporte para TypeScript y JSX
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],  
     },
     module: {
         rules: [
             {
                 test: /\.(js|jsx|ts|tsx)$/,
                 exclude: /node_modules/,
-                use: 'babel-loader', // Transpilar JS y TS
+                use: 'babel-loader', 
             },
             {
                 test: /\.css$/,  
-                use: ['style-loader', 'css-loader'], // Soporte para CSS
+                use: ['style-loader', 'css-loader'], 
             },
             {
-                test: /\.(png|jpg|gif|svg)$/,  // Para imágenes
+                test: /\.(png|jpg|gif|svg)$/,  
                 type: 'asset/resource',
                 generator: {
-                    filename: 'assets/images/[name][ext]', // Opcional: Ruta para almacenar las imágenes
+                    filename: 'assets/images/[name][ext]', 
                 },
             },
         ],
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './public/index.html', // Usa tu archivo HTML como base
+            template: './public/index.html', // Archivo HTML como base
             inject: 'body',
         }),
         new CopyWebpackPlugin({
@@ -52,12 +53,13 @@ module.exports = {
         }),
     ],
     devServer: {
-        static: path.join(__dirname, 'public'), // Servir archivos estáticos desde 'public'
+        static: path.join(__dirname, 'public'), 
         historyApiFallback: true,  // Para soportar rutas con React Router
-        port: 3000,  // El puerto de desarrollo
-        open: true,  // Abrir automáticamente en el navegador
-        hot: true,  // Habilitar recarga en caliente
+        port: 3000,  
+        open: true,  
+        hot: true,  
     },
-    mode: isProd ? 'production' : 'development', // Configurar el modo
+    mode: isProd ? 'production' : 'development', 
 };
 
+// Message for Gastón from the future: Linea 15 y 16 para diferentes entornos y gh pages.
