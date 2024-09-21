@@ -37,11 +37,3 @@ Welcome to the **Pokedex Web Application**! This project showcases the first gen
 
 ### Pagination Styling
 - **Pokéball-Themed Pagination:** The pagination buttons are styled as Pokéballs, with the currently active page having a distinct style.
-
-## Screenshots
-
-### Home Page View
-![Home Page](path/to/your/home-page-screenshot.png)
-
-### Favorites Page View
-![Favorites Page](path/to/your/favorites-page-screenshot.png)
