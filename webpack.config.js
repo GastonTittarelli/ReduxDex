@@ -42,6 +42,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './public/index.html', // Archivo HTML como base
             inject: 'body',
+            favicon: './public/gengarIcono2.png',
         }),
         new CopyWebpackPlugin({
             patterns: [

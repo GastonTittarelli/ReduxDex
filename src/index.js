@@ -17,6 +17,13 @@ const composedEnhancers = composeAlt(applyMiddleware(thunk, logger))
 
 const store = createStore(rootReducer, composedEnhancers) 
 
+const favicon = require('../public/gengarIcono2.png');
+const link = document.createElement('link');
+link.rel = 'icon';
+link.href = favicon;
+link.type = 'image/png';
+document.head.appendChild(link);
+
 root.render(
   <HashRouter>
     <Provider store={store}>
