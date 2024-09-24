@@ -12,8 +12,8 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js', 
 
-        publicPath: isProd ? '/Pokedex-Redux/' : '/', // Local
-        // publicPath: isProd ? '/Pokedex-Redux/' : './', // Github Pages
+        // publicPath: isProd ? '/Pokedex-Redux/' : '/', // Local
+        publicPath: isProd ? '/Pokedex-Redux/' : './', // Github Pages
     },
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],  
