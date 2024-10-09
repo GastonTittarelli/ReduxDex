@@ -1,4 +1,4 @@
-# Pokedex Web Application
+# 👾 Pokedex Web Application
 
 Welcome to the **Pokedex Web Application**! This project showcases the first generation of Pokémon, featuring interactive elements, a favorites section, and detailed stats for each Pokémon. Below is a breakdown of the features and functionality implemented in this project.
 
