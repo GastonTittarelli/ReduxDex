@@ -6,11 +6,13 @@ Welcome to the **Pokedex Web Application**! This project showcases the first gen
 
 - **React** - A JavaScript library for building user interfaces.
 - **Redux** - A predictable state container for JavaScript apps.
-- **Ant Design** - A UI design language and React UI library for web applications.
-- **CSS** - Styling for the application.
-- **JavaScript** - Interactive functionality.
-- **HTML5** - Markup language for structuring the web page.
 - **Webpack** - A module bundler for JavaScript applications.
+- **Bubble**: A visual programming platform for building web applications without code, used to manage specific app functionalities in a more accessible way.
+- **HTML5** - Markup language for structuring the web page.
+- **JavaScript** - Interactive functionality.
+- **CSS** - Styling for the application.
+- **Axios**: A promise-based HTTP client used to fetch data from external APIs, including the Pokémon data from the Pokémon API.
+- **Ant Design** - A UI design language and React UI library for web applications.
 
 ## Features
 
