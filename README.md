@@ -7,7 +7,7 @@ Welcome to the **Pokedex Web Application**! This project showcases the first gen
 - **React** - A JavaScript library for building user interfaces.
 - **Redux** - A predictable state container for JavaScript apps.
 - **Ant Design** - A UI design language and React UI library for web applications.
-- **CSS/SCSS** - Styling for the application.
+- **CSS** - Styling for the application.
 - **JavaScript** - Interactive functionality.
 - **HTML5** - Markup language for structuring the web page.
 - **Webpack** - A module bundler for JavaScript applications.
