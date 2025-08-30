@@ -2,6 +2,19 @@
 
 Welcome to the **Pokedex Web Application**! This project showcases the first generation of Pokémon, featuring interactive elements, a favorites section, and detailed stats for each Pokémon. Below is a breakdown of the features and functionality implemented in this project.
 
+## 📸 Screenshots
+
+- **Home**
+<img width="1918" height="918" alt="image" src="https://github.com/user-attachments/assets/89b114ca-824d-4808-90dd-420bfccdf80b" />
+
+- **Poke-Detail**
+<img width="1918" height="918" alt="image" src="https://github.com/user-attachments/assets/c57c1dae-3f50-4cb9-804c-939d49c499ab" />
+
+- **Favorite**
+<img width="1918" height="918" alt="image" src="https://github.com/user-attachments/assets/eb7ce4fa-c716-4e47-967b-1183b9e40a45" />
+
+
+  
 ## Technologies Used
 
 - **React** - A JavaScript library for building user interfaces.
